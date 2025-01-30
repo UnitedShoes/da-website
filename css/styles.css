@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    color: #95979F;
+    background-image: url("/assets/background.png");
+    background-color: #292929;
+    background-size: cover;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+h1 {
+    color: #fff;
+    letter-spacing: -0.5px;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+/* Main rectangle */
+
+.flex-container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-item.header {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-right: 6rem;
+    padding-left: 6rem;
+    text-align: center;
+    background-color: #303030;
+    border-radius: 1rem;
+}
+
+@media (max-width: 600px) {
+    .flex-item.header {
+        padding: 3rem;
+    }
+}
+
+.flex-item.header::before {
+    content: "";
+    height: 5rem;
+    width: 5rem;
+    border-radius: 3rem;
+    background-color: #303030;
+    background-image: url('/assets/favicon.png');
+    display: block;
+    margin: 0 auto;
+    margin-top: -5.5rem;
+    margin-bottom: 1rem;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Subtitle texts */
+
+.at-symbol {
+    color: #32CD32;
+}
+
+.linkalt a {
+    text-decoration: none;
+    color: #95979F;
+    transition: 0.3s;
+}
+
+.linkalt a:hover {
+    color: #78797d;
+    transition: 0.3s;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+
+    align-items: center;
+    justify-content: center;
+}
+
+/* Socials text */
+
+a {
+    text-decoration: none;
+    color: #95979F;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.link a {
+    text-decoration: none;
+    color: #95979F;
+    border-bottom: 2px dotted;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.link a:hover {
+    color: #78797d;
+    transition: 0.3s;
+}
+
+.dot::before {
+    content: "•";
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+@media (max-width: 600px) {
+    .dot::before {
+        content: none;
+    }
+}
+
+#discord {
+    height: 14px;
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    #links {
+        flex-direction: column;
+    }
+}
